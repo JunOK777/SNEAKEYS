@@ -1,0 +1,25 @@
+.content-name {
+  margin-top: 15px;
+  margin-bottom: 5px; 
+}
+.upload-button {
+  display: block;
+  margin-top: 20px;
+}
+/*footer*/
+.footer {
+  background-color: #333333;
+  color: #fff;
+}
+.sns-icons {
+  display: flex;
+  justify-content: center;
+}
+.sns-icon {
+  margin:30px 15px 0;
+}
+.copylights {
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 30px;
+}

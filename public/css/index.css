@@ -1,0 +1,103 @@
+.main-content .row {
+  margin: 0 auto;
+  margin-right: 10px;
+}
+.images-type {
+  margin-left: 5px;
+  font-size: 18px; 
+}
+}
+.imgs {
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.img {
+  padding-top: 15px;
+  text-align: center;
+}
+.item-image {
+  width: 95%;
+  margin: 0 auto;
+}
+.img-flex {
+  display: flex;
+  justify-content: center;
+}
+.image_upload_title {
+  margin-top: 20px;
+}
+.image_upload_title a {
+  display: block;
+}
+.del_button {
+  margin-top:10px;
+}
+
+.img_name{
+  margin-top: 5px;
+  text-align: center;
+}
+
+.none {
+  display: none;
+}
+
+.more {
+  
+  text-align: center;
+  font-size: 16px;
+}
+.more-button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #018ddd;/*色*/
+  border: solid 1px #0f9ada;/*線色*/
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.side-flex {
+  display: flex;
+}
+.search-form {
+  margin-bottom: 20px;
+}
+.brand-title {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.brand-tags li {
+  margin-left: 15px;
+}
+.brand-tags {
+  font-size: 16px;
+}
+.brand-tags ul {
+  list-style-type: none;
+  padding: 10px;
+}
+.brand-tags li {
+  margin-bottom: 5px;
+}
+/*footer*/
+.footer {
+  background-color: #333333;
+  color: #fff;
+}
+.sns-icons {
+  display: flex;
+  justify-content: center;
+}
+.sns-icon {
+  margin:30px 15px 0;
+}
+.copylights {
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 30px;
+}

@@ -1,0 +1,108 @@
+.mypage {
+  margin: 15px 30px;
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 10px;
+}
+
+/*mypage_contents */
+.mypage_contents {
+  width: 1100px;
+  margin: 0 auto; 
+}
+.icon {
+  margin-left: 20px;
+}
+.user_name {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.user_name span {
+  font-size: 14px;
+}
+.sns_icons {
+  display: flex;
+  justify-content: center;
+}
+.sns_icon {
+  margin: 0 10px;
+}
+.image-upload-button {
+  width: 334px;
+  margin: 40px auto 20px auto;
+  font-size: 16px;
+}
+
+.image-upload-button a {
+  display: block;
+  text-align: center;
+  background: #2490d0;
+  padding: 12px 30px;
+  color: #fff;
+}
+
+/*mylist_contents */
+.mylist {
+  margin: 15px 30px;
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 10px;
+}
+.mylist_contents {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.mylist_title {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.more {
+   font-size: 16px;
+   text-align: center;
+}
+.more-button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #018ddd;/*色*/
+  border: solid 1px #0f9ada;/*線色*/
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.image-card {
+  margin: 1px;
+  background-color: #fff;
+}
+.image-card-body {
+  width: 330px;
+  height: 290px;
+}
+.imgs {
+  margin-bottom: 10px;
+}
+.img {
+  padding-top: 15px;
+  text-align:center;
+}
+.image_upload_title {
+  margin-top: 20px;
+}
+.image_upload_title a {
+  display: block;
+
+}
+.del_button {
+  margin-top:10px;
+}
+
+.img_name{
+  margin-top: 5px;
+  text-align: center;
+}
