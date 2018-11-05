@@ -6,7 +6,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>snelog</title>
+    <title>SNECKEYS</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -21,17 +21,18 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="height: 80px;">
             <div class="container">
-                    <div class="side-flex col-md-4">
+                    <div class="side-flex col-md-4 align-items-center">
                       <form class="search-form" action="{{ route('search') }}" method="get">
-                        <input class="search-box" style="margin-top:18px; " type="text" name="keyword" class="searchForm" placeholder="検索ワードを入力">
-                        <input class="search-button" type="submit" value="検索" class="btn">
+                        <input class="search-box" type="text" name="keyword" placeholder="検索ワードを入力">
+                        <button class="search-button" type="submit"><i class="fas fa-search"></i></button>
                       </form>
                     </div>
                     <div class="col-md-4 container-center">
                         <a class="navbar-brand" href="{{ url('/') }}">
-                            スニログ
+                            
+                            <img src="{{ asset('storage/logo/logo01.png') }}">
                         </a>
                     </div>
                     <div class="col-md-4">
@@ -124,7 +125,7 @@
                 </div>
             </div>
             <p class="copylights">
-                All copyrights reserved © 2018 - <a href="/">snelog</a>
+                All copyrights reserved © 2018 - <a href="/">SNECKEYS</a>
             </p>
         </div>
     </footer>

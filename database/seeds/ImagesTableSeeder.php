@@ -39,7 +39,7 @@ class ImagesTableSeeder extends Seeder
         $param = [
           'user_id' => 1,
           'image_file_name' => 'Air_Jordan_4.jpg',
-          'item_name' => 'AIR_JORDAN_6',
+          'item_name' => 'AIR_JORDAN_4',
           'brand_name' => 'NIKE',
         ];
         DB::table('images')->insert($param);

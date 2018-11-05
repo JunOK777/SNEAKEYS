@@ -3,6 +3,7 @@
 <link href="{{ asset('css/mypage.css') }}" rel="stylesheet">
 @endsection
 @section('content')
+<div class="container">
 <section class="mypage">
   <div class="mypage_contents">
     <div class="row" >
@@ -31,71 +32,61 @@
     </div>
   </div>
 </section>
+
 <section class="mylist">
   <div class="mylist_contents">
     <div class="want_list">
       <div class="mylist_title">
         <p>＃wantしたアイテム</p>
       </div>
-      <div class="col-xs-4">
         <div class="row">
           @foreach($want_images as $want_image)
             <div class="col-md-4 col-xs-4 imgs">
-              <div class="card">
-                <div class="card-body">
-                  <div class="img">
-                    <a href="{{ route('image.show', $want_image['id']) }}">
-                      <img src="{{ asset('storage/main_image/'.$want_image['image_file_name']) }}" alt='' style=" max-height:200px; width:250px;">
-                    </a>
-                    @if(auth()->id() === $want_image['user_id'])
-                      <form action="{{ route('delete', $want_image['id']) }}" method="POST">
-                        {{ method_field('DELETE') }}
-                        {{ csrf_field() }}
-                        <button type="submit" class="del_button">削除</button>
-                      </form>
-                    @endif
-                  </div>
-                  <div class="img_name">
-                    <p><a href="{{ route('image.show', $want_image['id']) }}">{{ $want_image['item_name'] }}</a></p>
-                  </div>
-                </div>
+              <div class="img">
+                <a href="{{ route('image.show', $want_image['id']) }}">
+                  <img class="item-image" src="{{ asset('storage/main_image/'.$want_image['image_file_name']) }}">
+                </a>
+                @if(auth()->id() === $want_image['user_id'])
+                  <form action="{{ route('delete', $want_image['id']) }}" method="POST">
+                    {{ method_field('DELETE') }}
+                    {{ csrf_field() }}
+                    <button type="submit" class="del_button">削除</button>
+                  </form>
+                @endif
+              </div>
+              <div class="img_name">
+                <p><a href="{{ route('image.show', $want_image['id']) }}">{{ $want_image['item_name'] }}</a></p>
               </div>
             </div>
           @endforeach
         </div>
-      </div>
       <div class="mylist_title">
         <p>＃haveしたアイテム</p>
       </div>  
-      <div class="col-xs-4">
         <div class="row">
           @foreach($have_images as $have_image)
             <div class="col-md-4 col-xs-4 imgs">
-              <div class="card">
-                <div class="card-body">
-                  <div class="img">
-                    <a href="{{ route('image.show', $have_image['id']) }}">
-                      <img src="{{ asset('storage/main_image/'.$have_image['image_file_name']) }}" alt='' style=" max-height:200px; width:250px;">
-                    </a>
-                    @if(auth()->id() === $have_image['user_id'])
-                      <form action="{{ route('delete', $have_image['id']) }}" method="POST">
-                        {{ method_field('DELETE') }}
-                        {{ csrf_field() }}
-                        <button type="submit" class="del_button">削除</button>
-                      </form>
-                    @endif
-                  </div>
-                  <div class="img_name">
-                    <p><a href="{{ route('image.show', $have_image['id']) }}">{{ $have_image['item_name'] }}</a></p>
-                  </div>
-                </div>
+              <div class="img">
+                <a href="{{ route('image.show', $have_image['id']) }}">
+                  <img class="item-image" src="{{ asset('storage/main_image/'.$have_image['image_file_name']) }}" alt='' style=" max-height:200px; width:250px;">
+                </a>
+                @if(auth()->id() === $have_image['user_id'])
+                  <form action="{{ route('delete', $have_image['id']) }}" method="POST">
+                    {{ method_field('DELETE') }}
+                    {{ csrf_field() }}
+                    <button type="submit" class="del_button">削除</button>
+                  </form>
+                @endif
+              </div>
+              <div class="img_name">
+                <p><a href="{{ route('image.show', $have_image['id']) }}">{{ $have_image['item_name'] }}</a></p>
               </div>
             </div>
           @endforeach
         </div>
-      </div>
     </div>
   </div>
 </section>
+</div>
 
 @stop

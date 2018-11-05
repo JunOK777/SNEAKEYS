@@ -20,7 +20,7 @@ $(document).ready(function () {
             let num_just = match.count_just
             let num_large = match.count_large
 
-            $('#count').html(num_small - 1);
+            $('#count_small').html(num_small - 1);
           } else {
             alert('error!');
           }
@@ -69,7 +69,7 @@ $(document).ready(function () {
             let num_just = match.count_just
             let num_large = match.count_large
 
-            $('#count').html(num_small + 1);
+            $('#count_small').html(num_small + 1);
           } else {
             alert('error!');
           }

@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-
+<div class="container">
 <section class="image_detail">
   <input id="image_id" type="hidden" value="{{ $image->id }}">
 <!-- image -->
@@ -137,7 +137,6 @@
         @endif
       </div>
     </div>
-  </div>
 </section>
 
 <!-- review -->
@@ -215,7 +214,7 @@
     </form>
   </div>
 </section>
-
+</div>
 
 @stop
 

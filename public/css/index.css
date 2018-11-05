@@ -6,7 +6,6 @@
   margin-left: 5px;
   font-size: 18px; 
 }
-}
 .imgs {
   margin-bottom: 10px;
   background-color: #fff;
@@ -61,20 +60,16 @@
   text-shadow: 0 1px 0 rgba(0,0,0,0.2);
 }
 
+/*side-bar*/
 .side-flex {
   display: flex;
-}
-.search-form {
-  margin-bottom: 20px;
 }
 .brand-title {
   margin-top: 50px;
   margin-left: 20px;
 }
-.brand-tags li {
-  margin-left: 15px;
-}
 .brand-tags {
+  text-align: center;
   font-size: 16px;
 }
 .brand-tags ul {
@@ -83,6 +78,9 @@
 }
 .brand-tags li {
   margin-bottom: 5px;
+  margin-left: 15px;
+
+
 }
 /*footer*/
 .footer {
